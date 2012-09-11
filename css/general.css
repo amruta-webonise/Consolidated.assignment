@@ -36,7 +36,13 @@ html,body
     border: 3px solid #999;
     border-radius: 10px;
 }
-
+#fetch
+{
+    padding: 0 10px 10px;
+    width:550px;
+    height:450px;
+  
+}
 #registration label
 {
     display: block;
@@ -54,7 +60,15 @@ html,body
     font-size: 11px;
     border: 1px solid #cecece;
 }
-
+#fetch input
+{
+    width: 300px;
+    padding: 6px;
+    color: #006600;
+    font-family: Arial,  Verdana, Helvetica, sans-serif;
+    font-size: 11px;
+    border: 1px solid #cecece;
+}
 #registration #description
 {
     width: 300px;
@@ -109,9 +123,10 @@ h1
     background: green;
 }
 
-#registration #showUsers
+#fetch #showUsers
 {
     width:10em;
+    margin-top:3cm;
     background: white;
     color: black;
     font-weight: 700;
@@ -120,7 +135,7 @@ h1
     cursor: pointer;
 }
 
-#registration #showUsers:hover
+#fetch #showUsers:hover
 {
     background: green;
 }

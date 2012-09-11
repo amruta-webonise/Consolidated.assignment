@@ -118,10 +118,14 @@
 				
 		<div>	
 		    <input type="submit" id="submit" onclick=" return checkForm(this.form)" value="Submit" name="submit" />
-		    <input type="button" id="showUsers" value="Show Users" name="showUsers" onClick="parent.location='http://blooming-beach-2334.herokuapp.com/users.json'"/>
+		    
 		</div>
 			
             </form>
+	
+	    <form  id="fetch" action="http://blooming-beach-2334.herokuapp.com/users.json" method="get">
+	        <input type="submit" id="showUsers" value="Show Users" name="showUsers"/>
+	    </form>
         </div>
 
     </body>
