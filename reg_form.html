@@ -1,0 +1,94 @@
+<html>
+	<head>
+		<title>Registration form</title>
+	<link rel="stylesheet" href="general.css" type="text/css" media="screen" />
+  <script language="JavaScript" type="text/JavaScript">
+
+  function checkForm(thisform)
+  {
+    if(thisform.name.value=='')
+    {
+      alert("Name field is required. Please fill it in.");
+      return false;
+    }
+    if(thisform.age.value=='')
+    {
+      alert("age field is required. Please fill it in.");
+      return false;
+    }
+	if (parseInt(thisform.age.value) !=
+            thisform.age.value) {
+		alert('Please enter a age, numbers only');
+		return false;
+	}
+    if(thisform.address.value=='')
+    {
+      alert("Address field is required. Please fill it in.");
+      return false;
+    }
+    if(thisform.email.value=='')
+    {
+      alert("Email field is required. Please fill it in.");
+      return false;
+    }
+    if(thisform.pincode.value=='')
+    {
+      alert("pincode field is required. Please fill it in.");
+      return false;
+    }
+	if (parseInt(thisform.pincode.value) !=
+            thisform.pincode.value) {
+		alert('Please enter a pincode, numbers only');
+		return false;
+	}
+    if(thisform.description.value=='')
+    {
+      alert("Email field is required. Please fill it in.");
+      return false;
+    }
+	return true;
+    //if all is OK submit the form
+
+    thisform.submit();
+  }
+  </script>
+<h1>Registration form</h1>
+	</head>
+	<body>
+<div id="container">
+		<form  id="registration" action="http://blooming-beach-2334.herokuapp.com/users.json" method="post">
+
+			<table>
+				<tr>
+					<td>Enter your name:</td> <td><input type="textfield" id="name" name="name"></td>
+				</tr>
+				<tr>
+					<td>Enter your age:</td> <td><input type="textfield" id="age" name="age"></td>
+				</tr>
+				<tr>
+					<td>Gender: <td>Male<input type="radio" id="male" name="gender" value="male" checked="checked">Female <input type="radio" id="female" 						name="gender" value="female"></td>
+				</tr>
+				<tr>
+					<td>Email </td><td><input type="textfield" id="email" name="email"></td>
+				</tr>
+				<tr>
+					<td>Address </td><td><input type="textfield" id="address" name="address"></td>
+				</tr>
+				<tr>
+					<td>Pin Code </td><td><input type="textfield" id="pincode" name="pincode"></td>
+				</tr>
+				<tr>
+					<td>About yourself </td><td><input type="textarea" rows="4" cols="50" id="description" name="description"></td>
+				</tr>
+				<tr>
+					<td><input type="submit" id="submit" onclick=" return checkForm(this.form)" value="Submit" name="submit" /></td>
+					<td><input type="button" id="showUsers" value="Show Users" name="showUsers" /></td>
+				</tr>
+
+			</table>
+
+
+</form>
+</div>
+</body>
+</html>
