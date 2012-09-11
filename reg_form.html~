@@ -43,7 +43,7 @@
     }
     if(thisform.description.value=='')
     {
-      alert("Email field is required. Please fill it in.");
+      alert("Description is required. Please fill it in.");
       return false;
     }
 	return true;

@@ -41,9 +41,13 @@
 		alert('Please enter a pincode, numbers only');
 		return false;
     }
+    if (parseInt(thisform.pincode.value.length) != 6) {
+		alert('Please enter a valid 6 digit pincode');
+		return false;
+    }
     if(thisform.description.value=='')
     {
-      alert("Email field is required. Please fill it in.");
+      alert("Description is required. Please fill it in.");
       return false;
     }
 	return true;
